@@ -70,11 +70,6 @@
 	text-align: center;
 }
 
-[class*="col-"]:after {
-	content: "";
-	display: block;
-	clear: both;
-}
 
 .row:after {
 	content: "";
