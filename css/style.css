@@ -14,6 +14,8 @@
 	margin: auto;
 	border: 3px solid #47A3DA;
 	padding: 20px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 .container h1 {
@@ -26,31 +28,56 @@
 .container h2 {
 	font-size: 32px;
 	color: #47a3da;
+	padding-bottom: 10px;
 }
 
 .container h3 {
 	font-size: 24px;
 	color: #C0C0C0;
 	font-weight: normal;
+	padding-bottom: 10px;
 }
 
 .container p {
 	font-size: ;
 	color: #47a3da;
+	padding: 0 32px;
 }
 
 .container .btn {
 	font-size: ;
-	color: #fff;
-	background: #47a3da;
-	padding: 1px;
+    color: #fff;
+    background: #47a3da;
+    padding: 9px 20px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 42%;
+    border-radius: 2px;
+}
+
+.container .btn:hover {
+	background: #02639D;
+}
+
+.container .btn:hover:before {
+	color: #02639D;
 }
 
 .container .btn:before {
 	content: "+";
-	color: #47a3da;
-	background: #fff;
-	border-radius: 50%;
+    color: #47a3da;
+    background: #fff;
+    border-radius: 50%;
+    width: 15px;
+    display: inline-block;
+    height: 15px;
+    line-height: 0.8;
+    vertical-align: baseline;
+    margin-right: 4px;
+    font-weight: bold;
 }
 
 .row {
@@ -61,6 +88,10 @@
 	width: 25%;
 }
 
+.col-3 .btn {
+	width: 55%;
+}
+
 .col-4{
 	width: 33.33%;
 }
@@ -68,6 +99,9 @@
 [class*="col-"] {
 	float: left;
 	text-align: center;
+	min-height: 405px;
+	padding-bottom: 74px;
+	position: relative;
 }
 
 
@@ -80,3 +114,8 @@
 .container a {
 	text-decoration: none;
 }
+
+.container a:hover h2 {
+	color: #02639D;
+}
+ 
